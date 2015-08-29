@@ -12,7 +12,7 @@ srcdir=.
 main=FirstProject.elm
 
 git fetch
-git rm $srcdir/*.elm
+rm -f $srcdir/*.elm
 git checkout $commit .
 elm-make $main
 git add elm.js
