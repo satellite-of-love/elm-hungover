@@ -13,7 +13,7 @@ main=FirstProject.elm
 
 git fetch
 rm -f $srcdir/*.elm
-git checkout $commit elm-package.json *.elm index.html
+git checkout $commit elm-package.json $srcdir/*.elm index.html
 elm-make $main
 git add elm.js
 git add index.html
