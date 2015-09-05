@@ -1,6 +1,12 @@
 module FirstProject where
 
-import Html exposing (Html)
+import Html exposing (..)
+
 
 main : Html
-main = Html.text "hello friends"
+main = myDiv 
+
+pageHeader =
+    h1 [ ] [ Html.text "code code code"]
+
+myDiv = div [ ] [ pageHeader, Html.text "hello friends"]
